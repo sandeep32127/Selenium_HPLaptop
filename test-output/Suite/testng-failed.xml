@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]" parallel="classes">
+  <parameter name="uName" value="DemoSalesManager"/>
+  <parameter name="Pwd" value="crmsfa"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps"/>
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="testcaseTNG.TNGEditLead">
+        <methods>
+          <include name="closeApp"/>
+          <include name="testngcheckedit"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testcaseTNG.TNGEditLead -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
